@@ -2,6 +2,7 @@
 created in 2018/4/15
 logistic regeression using tensorflow
 @author: Jie Wang
+LinearRegression Algorithms
 
 '''
 
@@ -37,8 +38,8 @@ init = tf.global_variables_initializer()
 #训练模型，建立会话并运行
 training_epochs = 1000 #定义训练次数
 # 设置显存计算
-# gpu_options = tf.GPUOptions(allow_growth=True)
-# sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
+gpu_options = tf.GPUOptions(allow_growth=True)
+sess = tf.Session(config=tf.ConfigProto(gpu_options=gpu_options))
 with tf.Session() as sess:
     sess.run(init)
     for epoch in range(training_epochs):
