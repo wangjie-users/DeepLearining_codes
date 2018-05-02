@@ -1,5 +1,5 @@
 '''
-created in 2018/4/15
+created on 2018/4/15
 logistic regeression using tensorflow
 @author: Jie Wang
 LinearRegression Algorithms
